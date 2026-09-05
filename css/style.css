@@ -1,0 +1,245 @@
+/* ==========================================================================
+   Kbong Pte. Ltd. — Custom Software Development
+   Core stylesheet (Tailwind CDN handles utility classes; this file holds
+   brand tokens, bespoke components, and refinements Tailwind can't do alone)
+   ========================================================================== */
+
+:root {
+  --kb-navy-950: #060b16;
+  --kb-navy-900: #0a1224;
+  --kb-navy-800: #0f1b33;
+  --kb-navy-700: #152342;
+  --kb-navy-600: #1c2f56;
+  --kb-slate-300: #b9c3d6;
+  --kb-slate-400: #8b98b3;
+  --kb-cyan-400: #35d0e0;
+  --kb-cyan-300: #6ee3ee;
+  --kb-amber-400: #f0b429;
+  --kb-white: #f7f9fc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--kb-navy-950);
+  color: var(--kb-white);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+}
+
+/* ---- Reusable brand tokens as utility-like classes ---- */
+.text-kb-cyan { color: var(--kb-cyan-400); }
+.bg-kb-navy-950 { background-color: var(--kb-navy-950); }
+.bg-kb-navy-900 { background-color: var(--kb-navy-900); }
+.bg-kb-navy-800 { background-color: var(--kb-navy-800); }
+.border-kb-navy-700 { border-color: var(--kb-navy-700); }
+
+/* ---- Grid / dot pattern background ---- */
+.kb-grid-bg {
+  background-image:
+    linear-gradient(rgba(53, 208, 224, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53, 208, 224, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
+.kb-radial-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 20% 10%, rgba(53, 208, 224, 0.18), transparent 45%),
+              radial-gradient(circle at 85% 30%, rgba(240, 180, 41, 0.10), transparent 40%);
+}
+
+/* ---- Nav ---- */
+#site-header {
+  backdrop-filter: blur(14px);
+  background: rgba(6, 11, 22, 0.82);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.kb-logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--kb-cyan-400), var(--kb-navy-600));
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  color: var(--kb-navy-950);
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  position: relative;
+  color: var(--kb-slate-300);
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+.nav-link:hover { color: var(--kb-white); }
+.nav-link.is-active { color: var(--kb-cyan-300); }
+.nav-link.is-active::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -8px;
+  width: 100%; height: 2px;
+  background: var(--kb-cyan-400);
+  border-radius: 2px;
+}
+
+/* ---- Buttons ---- */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(135deg, var(--kb-cyan-400), #1aa9bb);
+  color: #05131a;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.78rem 1.6rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 24px -8px rgba(53, 208, 224, 0.45);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(53, 208, 224, 0.55);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--kb-white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.75rem 1.55rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.18);
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+.btn-secondary:hover {
+  border-color: var(--kb-cyan-400);
+  background: rgba(53, 208, 224, 0.06);
+}
+
+/* ---- Cards ---- */
+.kb-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.015));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+}
+.kb-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(53, 208, 224, 0.35);
+  background: linear-gradient(180deg, rgba(53,208,224,0.06), rgba(255,255,255,0.02));
+}
+
+.kb-icon-badge {
+  width: 46px;
+  height: 46px;
+  border-radius: 10px;
+  background: rgba(53, 208, 224, 0.12);
+  color: var(--kb-cyan-300);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+.kb-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--kb-cyan-300);
+  background: rgba(53, 208, 224, 0.10);
+  border: 1px solid rgba(53, 208, 224, 0.25);
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+}
+
+/* ---- Process step connector ---- */
+.kb-step-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(53, 208, 224, 0.4);
+  color: var(--kb-cyan-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  flex-shrink: 0;
+  background: var(--kb-navy-900);
+}
+
+.kb-step-line {
+  width: 1px;
+  flex: 1;
+  background: linear-gradient(180deg, rgba(53,208,224,0.5), transparent);
+}
+
+/* ---- Section divider label ---- */
+.kb-eyebrow {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--kb-cyan-400);
+}
+
+/* ---- Footer ---- */
+#site-footer a { color: var(--kb-slate-300); }
+#site-footer a:hover { color: var(--kb-cyan-300); }
+
+/* ---- Mobile nav ---- */
+#mobile-menu { display: none; }
+#mobile-menu.open { display: block; }
+
+/* ---- Scroll fade-in ---- */
+.kb-fade-up {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.kb-fade-up.kb-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ---- Misc ---- */
+.kb-hairline {
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.kb-quote-mark {
+  font-family: 'Space Grotesk', serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: rgba(53, 208, 224, 0.35);
+}
+
+::selection {
+  background: rgba(53, 208, 224, 0.35);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--kb-navy-950); }
+::-webkit-scrollbar-thumb { background: var(--kb-navy-700); border-radius: 6px; }

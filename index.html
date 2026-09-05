@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kbong Pte. Ltd. | Bespoke Software Development, Singapore</title>
+<meta name="description" content="Kbong Pte. Ltd. is a Singapore-based software development company delivering custom, order-on-demand software built precisely to each client's specification.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2335d0e0%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 font-family=%22Arial%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23060b16%22>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-kb-navy-950 text-white antialiased">
+
+<!-- ================= HEADER ================= -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="kb-logo-mark">K</span>
+        <span class="font-display font-semibold text-lg tracking-tight">Kbong <span class="text-kb-cyan">Pte. Ltd.</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="index.html" class="nav-link is-active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link">Case Studies</a>
+        <a href="process.html" class="nav-link">Our Process</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="hidden lg:block">
+        <a href="contact.html" class="btn-primary text-sm">Start a Project <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Toggle menu">
+        <i id="icon-open" class="fa-solid fa-bars text-xl"></i>
+        <i id="icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="lg:hidden border-t border-kb-navy-700 bg-kb-navy-950/98 px-6 py-5 space-y-4">
+    <a href="index.html" class="block nav-link is-active">Home</a>
+    <a href="services.html" class="block nav-link">Services</a>
+    <a href="work.html" class="block nav-link">Case Studies</a>
+    <a href="process.html" class="block nav-link">Our Process</a>
+    <a href="about.html" class="block nav-link">About</a>
+    <a href="contact.html" class="block nav-link">Contact</a>
+    <a href="contact.html" class="btn-primary text-sm w-full justify-center mt-2">Start a Project</a>
+  </div>
+</header>
+
+<main>
+  <!-- ================= HERO ================= -->
+  <section class="relative overflow-hidden kb-grid-bg pt-40 pb-28 lg:pt-48 lg:pb-36">
+    <div class="kb-radial-glow"></div>
+    <div class="absolute inset-0 -z-10">
+      <img src="images/hero-network.jpg" alt="" class="w-full h-full object-cover opacity-20">
+      <div class="absolute inset-0 bg-gradient-to-b from-kb-navy-950 via-kb-navy-950/90 to-kb-navy-950"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+      <div class="max-w-3xl">
+        <span class="kb-tag"><i class="fa-solid fa-location-dot"></i> Singapore-Based Software Partner</span>
+        <h1 class="font-display mt-6 text-4xl sm:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight">
+          Custom Software, <span class="text-kb-cyan">Built to Order.</span><br>
+          Engineered for Your Business.
+        </h1>
+        <p class="mt-6 text-lg text-kb-slate-300 leading-relaxed max-w-2xl" style="color: var(--kb-slate-300);">
+          Kbong Pte. Ltd. designs and develops bespoke software on an order-on-demand basis. You bring the requirements and the business problem — our engineering team delivers a purpose-built solution, from first workshop to production deployment and beyond.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="contact.html" class="btn-primary">Request a Proposal <i class="fa-solid fa-arrow-right text-xs"></i></a>
+          <a href="work.html" class="btn-secondary">View Case Studies <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i></a>
+        </div>
+      </div>
+
+      <!-- Stats strip -->
+      <div class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-10 kb-fade-up">
+        <div>
+          <div class="font-display text-3xl sm:text-4xl font-semibold text-kb-cyan">100%</div>
+          <p class="mt-1 text-sm text-kb-slate-400" style="color: var(--kb-slate-400);">Custom-Built, No Templates</p>
+        </div>
+        <div>
+          <div class="font-display text-3xl sm:text-4xl font-semibold text-kb-cyan">10+</div>
+          <p class="mt-1 text-sm text-kb-slate-400" style="color: var(--kb-slate-400);">Industries Served</p>
+        </div>
+        <div>
+          <div class="font-display text-3xl sm:text-4xl font-semibold text-kb-cyan">End-to-End</div>
+          <p class="mt-1 text-sm text-kb-slate-400" style="color: var(--kb-slate-400);">From Discovery to Support</p>
+        </div>
+        <div>
+          <div class="font-display text-3xl sm:text-4xl font-semibold text-kb-cyan">SG</div>
+          <p class="mt-1 text-sm text-kb-slate-400" style="color: var(--kb-slate-400);">Headquartered in Singapore</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHAT WE DO ================= -->
+  <section class="py-24 border-t border-kb-navy-700" style="border-color: rgba(255,255,255,0.06);">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl kb-fade-up">
+        <span class="kb-eyebrow">What We Do</span>
+        <h2 class="font-display mt-3 text-3xl sm:text-4xl font-semibold">Software development on your terms</h2>
+        <p class="mt-4 text-kb-slate-300" style="color: var(--kb-slate-300);">We don't sell off-the-shelf products. Every engagement begins with your specific requirements, and ends with a solution that fits your operations — not the other way around.</p>
+      </div>
+
+      <div class="mt-14 grid md:grid-cols-3 gap-6">
+        <div class="kb-card p-8 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-list-check"></i></div>
+          <h3 class="font-display mt-5 text-xl font-semibold">Order-on-Demand Development</h3>
+          <p class="mt-3 text-sm leading-relaxed text-kb-slate-300" style="color: var(--kb-slate-300);">You define the specification and business outcome you need. We scope, quote, and build exactly that — no bundled features you didn't ask for, no forced platform.</p>
+        </div>
+        <div class="kb-card p-8 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-diagram-project"></i></div>
+          <h3 class="font-display mt-5 text-xl font-semibold">Full-Cycle Engineering</h3>
+          <p class="mt-3 text-sm leading-relaxed text-kb-slate-300" style="color: var(--kb-slate-300);">From requirements analysis and system architecture through development, QA, deployment, and post-launch support — a single accountable partner for the whole lifecycle.</p>
+        </div>
+        <div class="kb-card p-8 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-shield-halved"></i></div>
+          <h3 class="font-display mt-5 text-xl font-semibold">Built for the Real Business</h3>
+          <p class="mt-3 text-sm leading-relaxed text-kb-slate-300" style="color: var(--kb-slate-300);">Software that reflects your actual workflows, data, and operating model — designed to be maintained, extended, and owned by you long after launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES PREVIEW ================= -->
+  <section class="py-24 bg-kb-navy-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 kb-fade-up">
+        <div class="max-w-xl">
+          <span class="kb-eyebrow">Capabilities</span>
+          <h2 class="font-display mt-3 text-3xl sm:text-4xl font-semibold">A full engineering stack, on demand</h2>
+        </div>
+        <a href="services.html" class="btn-secondary self-start md:self-auto">All Services <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+
+      <div class="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="kb-card p-7 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-code"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Custom Application Development</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Bespoke desktop, web, and mobile applications engineered around your specification.</p>
+        </div>
+        <div class="kb-card p-7 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-users-gear"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Business & Customer Management Systems</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Internal platforms for tracking accounts, pipelines, tickets, and customer interactions — tailored to how your teams actually sell and serve.</p>
+        </div>
+        <div class="kb-card p-7 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-gears"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Workflow & Process Automation</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Replacing manual, spreadsheet-driven processes with structured, auditable digital workflows.</p>
+        </div>
+        <div class="kb-card p-7 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Systems Integration & APIs</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Connecting the tools you already run — payments, accounting, logistics, messaging — into one coherent system.</p>
+        </div>
+        <div class="kb-card p-7 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Cloud Infrastructure & DevOps</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Provisioning, deployment pipelines, and monitoring so your software stays fast, available, and secure.</p>
+        </div>
+        <div class="kb-card p-7 kb-fade-up">
+          <div class="kb-icon-badge"><i class="fa-solid fa-arrows-rotate"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Legacy Modernization</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Re-platforming ageing systems onto modern, maintainable architectures without disrupting operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TRACK RECORD / EXPERIENCE ================= -->
+  <section class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-14 items-center">
+      <div class="kb-fade-up">
+        <span class="kb-eyebrow">Track Record</span>
+        <h2 class="font-display mt-3 text-3xl sm:text-4xl font-semibold leading-tight">Experience across the systems businesses run on</h2>
+        <p class="mt-5 text-kb-slate-300 leading-relaxed" style="color: var(--kb-slate-300);">Our engineering team has delivered custom platforms for managing sales pipelines, customer accounts, support tickets, and client communications for organisations across retail, professional services, logistics, and finance. Each build was scoped from scratch to match the client's own sales process, data model, and reporting needs — not adapted from a generic template.</p>
+        <p class="mt-4 text-kb-slate-300 leading-relaxed" style="color: var(--kb-slate-300);">Whether the requirement is a lightweight internal tool or a multi-module business system, we bring the same disciplined process: understand the workflow first, then engineer the system around it.</p>
+        <div class="mt-8 grid grid-cols-2 gap-5">
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-check text-kb-cyan mt-1"></i>
+            <span class="text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Customer & pipeline management platforms</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-check text-kb-cyan mt-1"></i>
+            <span class="text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Order & inventory management tools</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-check text-kb-cyan mt-1"></i>
+            <span class="text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Support & service ticketing systems</span>
+          </div>
+          <div class="flex items-start gap-3">
+            <i class="fa-solid fa-circle-check text-kb-cyan mt-1"></i>
+            <span class="text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Internal reporting & analytics dashboards</span>
+          </div>
+        </div>
+        <a href="work.html" class="inline-flex items-center gap-2 mt-9 text-kb-cyan font-semibold text-sm hover:gap-3 transition-all">See how we work <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+      <div class="kb-fade-up relative">
+        <div class="rounded-2xl overflow-hidden border border-white/10">
+          <img src="images/coding-hands.jpg" alt="Software engineering at work" class="w-full h-[420px] object-cover">
+        </div>
+        <div class="absolute -bottom-6 -left-6 kb-card bg-kb-navy-900 p-5 max-w-[240px] hidden sm:block">
+          <div class="flex items-center gap-2 text-kb-cyan text-sm font-semibold"><i class="fa-solid fa-quote-left"></i> Built to spec</div>
+          <p class="mt-2 text-xs text-kb-slate-300" style="color: var(--kb-slate-300);">Every engagement starts with your requirements document — not our roadmap.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROCESS PREVIEW ================= -->
+  <section class="py-24 bg-kb-navy-900">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl kb-fade-up">
+        <span class="kb-eyebrow">How We Work</span>
+        <h2 class="font-display mt-3 text-3xl sm:text-4xl font-semibold">From your request to a running system</h2>
+      </div>
+      <div class="mt-14 grid md:grid-cols-4 gap-8">
+        <div class="kb-fade-up">
+          <div class="kb-step-num">1</div>
+          <h3 class="font-display mt-4 font-semibold">Requirements & Scoping</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">We sit down with your team to document exactly what the software needs to do.</p>
+        </div>
+        <div class="kb-fade-up">
+          <div class="kb-step-num">2</div>
+          <h3 class="font-display mt-4 font-semibold">Proposal & Architecture</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">A fixed-scope proposal with technical design, timeline, and cost — before any code is written.</p>
+        </div>
+        <div class="kb-fade-up">
+          <div class="kb-step-num">3</div>
+          <h3 class="font-display mt-4 font-semibold">Build & Review Cycles</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Iterative development with regular checkpoints, so what gets built matches what you ordered.</p>
+        </div>
+        <div class="kb-fade-up">
+          <div class="kb-step-num">4</div>
+          <h3 class="font-display mt-4 font-semibold">Launch & Support</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Deployment, handover documentation, and ongoing support as your needs evolve.</p>
+        </div>
+      </div>
+      <div class="mt-12">
+        <a href="process.html" class="btn-secondary">See the Full Process <i class="fa-solid fa-arrow-right text-xs"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY SINGAPORE / LOCATION ================= -->
+  <section class="py-24 relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <img src="images/singapore-skyline.jpg" alt="" class="w-full h-full object-cover opacity-25">
+      <div class="absolute inset-0 bg-gradient-to-r from-kb-navy-950 via-kb-navy-950/85 to-kb-navy-950"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+      <div class="kb-fade-up">
+        <span class="kb-eyebrow">Based in Singapore</span>
+        <h2 class="font-display mt-3 text-3xl sm:text-4xl font-semibold leading-tight">A regional delivery partner, built on Singapore's engineering standards</h2>
+        <p class="mt-5 text-kb-slate-300 leading-relaxed" style="color: var(--kb-slate-300);">Operating out of Singapore, Kbong Pte. Ltd. serves clients across the region who need software built to a precise specification, delivered on a clear timeline, and supported for the long run. We combine disciplined project management with hands-on engineering, so your project moves from request to deployment without surprises.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <span class="kb-tag"><i class="fa-solid fa-file-signature"></i> Fixed-Scope Quotations</span>
+          <span class="kb-tag"><i class="fa-solid fa-lock"></i> Confidential Engagements</span>
+          <span class="kb-tag"><i class="fa-solid fa-headset"></i> Post-Launch Support</span>
+        </div>
+      </div>
+      <div class="kb-fade-up kb-card p-8">
+        <h3 class="font-display text-xl font-semibold">Every project is order-on-demand</h3>
+        <p class="mt-3 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">We take on a limited number of engagements at a time, so each client gets a dedicated project team and direct access to the people building their system.</p>
+        <ul class="mt-6 space-y-3 text-sm">
+          <li class="flex items-center gap-3"><i class="fa-solid fa-check text-kb-cyan"></i> Detailed written specification before development begins</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-check text-kb-cyan"></i> Transparent, milestone-based pricing</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-check text-kb-cyan"></i> Source code and documentation delivered to you</li>
+          <li class="flex items-center gap-3"><i class="fa-solid fa-check text-kb-cyan"></i> Support plans available after go-live</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="py-24 bg-kb-navy-900 border-t" style="border-color: rgba(255,255,255,0.06);">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center kb-fade-up">
+      <h2 class="font-display text-3xl sm:text-4xl font-semibold">Have a system you need built?</h2>
+      <p class="mt-4 text-kb-slate-300" style="color: var(--kb-slate-300);">Tell us what you need. We'll come back with a clear scope, timeline, and quotation — no obligation.</p>
+      <div class="mt-9 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html" class="btn-primary">Request a Proposal <i class="fa-solid fa-arrow-right text-xs"></i></a>
+        <a href="mailto:kmk@kbongsoft.com" class="btn-secondary"><i class="fa-solid fa-envelope"></i> kmk@kbongsoft.com</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="site-footer" class="bg-kb-navy-950 border-t" style="border-color: rgba(255,255,255,0.08);">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="kb-logo-mark">K</span>
+        <span class="font-display font-semibold text-lg">Kbong <span class="text-kb-cyan">Pte. Ltd.</span></span>
+      </a>
+      <p class="mt-4 text-sm text-kb-slate-400 leading-relaxed" style="color: var(--kb-slate-400);">Order-on-demand software development, headquartered in Singapore.</p>
+      <div class="mt-5 flex gap-3 text-kb-slate-400" style="color: var(--kb-slate-400);">
+        <i class="fa-brands fa-linkedin text-lg"></i>
+        <i class="fa-brands fa-github text-lg"></i>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold text-sm tracking-wide uppercase text-white/90">Company</h4>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Case Studies</a></li>
+        <li><a href="process.html">Our Process</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold text-sm tracking-wide uppercase text-white/90">Services</h4>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li><a href="services.html#custom-development">Custom Application Development</a></li>
+        <li><a href="services.html#business-systems">Business Management Systems</a></li>
+        <li><a href="services.html#automation">Workflow Automation</a></li>
+        <li><a href="services.html#cloud">Cloud & DevOps</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold text-sm tracking-wide uppercase text-white/90">Get in Touch</h4>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-kb-cyan"></i><a href="mailto:kmk@kbongsoft.com">kmk@kbongsoft.com</a></li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-kb-cyan"></i><span class="text-kb-slate-300" style="color: var(--kb-slate-300);">Singapore</span></li>
+      </ul>
+      <a href="contact.html" class="btn-primary mt-5 text-sm">Contact Us <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    </div>
+  </div>
+  <div class="border-t py-6" style="border-color: rgba(255,255,255,0.08);">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-kb-slate-400" style="color: var(--kb-slate-400);">
+      <p>&copy; <span id="current-year"></span> Kbong Pte. Ltd. All rights reserved.</p>
+      <p>Company Registration: Singapore | UEN available upon request</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

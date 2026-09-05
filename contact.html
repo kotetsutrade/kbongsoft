@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us | Kbong Pte. Ltd.</title>
+<meta name="description" content="Get in touch with Kbong Pte. Ltd. to discuss your custom software project. Email kmk@kbongsoft.com or use the inquiry form.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%2335d0e0%22/><text x=%2250%22 y=%2268%22 font-size=%2260%22 font-family=%22Arial%22 font-weight=%22bold%22 text-anchor=%22middle%22 fill=%22%23060b16%22>K</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-kb-navy-950 text-white antialiased">
+
+<!-- ================= HEADER ================= -->
+<header id="site-header" class="fixed top-0 inset-x-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="kb-logo-mark">K</span>
+        <span class="font-display font-semibold text-lg tracking-tight">Kbong <span class="text-kb-cyan">Pte. Ltd.</span></span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-9">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link">Case Studies</a>
+        <a href="process.html" class="nav-link">Our Process</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link is-active">Contact</a>
+      </nav>
+      <div class="hidden lg:block">
+        <a href="mailto:kmk@kbongsoft.com" class="btn-primary text-sm"><i class="fa-solid fa-envelope"></i> kmk@kbongsoft.com</a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden text-white p-2" aria-label="Toggle menu">
+        <i id="icon-open" class="fa-solid fa-bars text-xl"></i>
+        <i id="icon-close" class="fa-solid fa-xmark text-xl hidden"></i>
+      </button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="lg:hidden border-t border-kb-navy-700 bg-kb-navy-950/98 px-6 py-5 space-y-4">
+    <a href="index.html" class="block nav-link">Home</a>
+    <a href="services.html" class="block nav-link">Services</a>
+    <a href="work.html" class="block nav-link">Case Studies</a>
+    <a href="process.html" class="block nav-link">Our Process</a>
+    <a href="about.html" class="block nav-link">About</a>
+    <a href="contact.html" class="block nav-link is-active">Contact</a>
+    <a href="mailto:kmk@kbongsoft.com" class="btn-primary text-sm w-full justify-center mt-2">Email Us</a>
+  </div>
+</header>
+
+<main>
+  <!-- PAGE HERO -->
+  <section class="relative overflow-hidden kb-grid-bg pt-40 pb-20">
+    <div class="kb-radial-glow"></div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 relative">
+      <span class="kb-eyebrow">Contact</span>
+      <h1 class="font-display mt-3 text-4xl sm:text-5xl font-semibold max-w-3xl leading-tight">Tell us what you need built</h1>
+      <p class="mt-5 text-lg text-kb-slate-300 max-w-2xl" style="color: var(--kb-slate-300);">Share a few details about your project and we'll follow up with next steps — typically within one business day.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT GRID -->
+  <section class="py-16 border-t" style="border-color: rgba(255,255,255,0.06);">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-12 gap-12">
+
+      <!-- Form -->
+      <div class="lg:col-span-7 kb-fade-up">
+        <div class="kb-card p-8 lg:p-10">
+          <h2 class="font-display text-2xl font-semibold">Request a Proposal</h2>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Submitting opens your email client, pre-filled and addressed to our team, so nothing is sent without your review.</p>
+
+          <form id="contact-form" class="mt-8 space-y-5">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="cf-name" class="block text-sm font-medium mb-2">Full Name <span class="text-kb-cyan">*</span></label>
+                <input type="text" id="cf-name" required class="w-full bg-kb-navy-900 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-kb-cyan-400" style="background-color: var(--kb-navy-900); border-color: rgba(255,255,255,0.1);" placeholder="Your name">
+              </div>
+              <div>
+                <label for="cf-company" class="block text-sm font-medium mb-2">Company</label>
+                <input type="text" id="cf-company" class="w-full bg-kb-navy-900 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-kb-cyan-400" style="background-color: var(--kb-navy-900); border-color: rgba(255,255,255,0.1);" placeholder="Company name">
+              </div>
+            </div>
+            <div>
+              <label for="cf-email" class="block text-sm font-medium mb-2">Email Address <span class="text-kb-cyan">*</span></label>
+              <input type="email" id="cf-email" required class="w-full bg-kb-navy-900 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-kb-cyan-400" style="background-color: var(--kb-navy-900); border-color: rgba(255,255,255,0.1);" placeholder="you@company.com">
+            </div>
+            <div>
+              <label for="cf-type" class="block text-sm font-medium mb-2">Project Type</label>
+              <select id="cf-type" class="w-full bg-kb-navy-900 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-kb-cyan-400" style="background-color: var(--kb-navy-900); border-color: rgba(255,255,255,0.1);">
+                <option>Custom Application Development</option>
+                <option>Business & Customer Management System</option>
+                <option>Workflow & Process Automation</option>
+                <option>Systems Integration & APIs</option>
+                <option>Cloud Infrastructure & DevOps</option>
+                <option>Legacy System Modernization</option>
+                <option>Not Sure / Other</option>
+              </select>
+            </div>
+            <div>
+              <label for="cf-message" class="block text-sm font-medium mb-2">Project Details <span class="text-kb-cyan">*</span></label>
+              <textarea id="cf-message" required rows="5" class="w-full bg-kb-navy-900 border border-white/10 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-kb-cyan-400" style="background-color: var(--kb-navy-900); border-color: rgba(255,255,255,0.1);" placeholder="Tell us what you're trying to build, and any timeline or budget context that would help us scope it."></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full justify-center">Send Inquiry <i class="fa-solid fa-paper-plane text-xs"></i></button>
+            <p id="cf-status" class="hidden text-xs text-kb-cyan text-center"></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- Info -->
+      <div class="lg:col-span-5 kb-fade-up space-y-6">
+        <div class="kb-card p-8">
+          <div class="kb-icon-badge"><i class="fa-solid fa-envelope"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Email</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">For proposals, partnerships, or general inquiries.</p>
+          <a href="mailto:kmk@kbongsoft.com" class="mt-3 inline-block text-kb-cyan font-semibold">kmk@kbongsoft.com</a>
+        </div>
+        <div class="kb-card p-8">
+          <div class="kb-icon-badge"><i class="fa-solid fa-location-dot"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Location</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Kbong Pte. Ltd. is headquartered in Singapore, serving clients across Singapore and the wider Asia-Pacific region.</p>
+        </div>
+        <div class="kb-card p-8">
+          <div class="kb-icon-badge"><i class="fa-solid fa-clock"></i></div>
+          <h3 class="font-display mt-4 text-lg font-semibold">Response Time</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">We aim to respond to all inquiries within one business day with clear next steps.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 bg-kb-navy-900">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="text-center kb-fade-up">
+        <span class="kb-eyebrow">Frequently Asked</span>
+        <h2 class="font-display mt-3 text-3xl font-semibold">Before you reach out</h2>
+      </div>
+      <div class="mt-12 space-y-5">
+        <div class="kb-card p-6 kb-fade-up">
+          <h3 class="font-semibold flex items-center gap-2"><i class="fa-solid fa-circle-question text-kb-cyan"></i> Do you take on small projects, or only large ones?</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">We take on projects of varying size, as long as the scope is well defined. Reach out with your idea and we'll tell you honestly whether it's a fit.</p>
+        </div>
+        <div class="kb-card p-6 kb-fade-up">
+          <h3 class="font-semibold flex items-center gap-2"><i class="fa-solid fa-circle-question text-kb-cyan"></i> How is pricing determined?</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">After the requirements discussion, we provide a fixed quotation tied to defined milestones — no open-ended hourly billing.</p>
+        </div>
+        <div class="kb-card p-6 kb-fade-up">
+          <h3 class="font-semibold flex items-center gap-2"><i class="fa-solid fa-circle-question text-kb-cyan"></i> Who owns the source code after delivery?</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">You do. Source code, documentation, and deployment access are handed over in full at project completion.</p>
+        </div>
+        <div class="kb-card p-6 kb-fade-up">
+          <h3 class="font-semibold flex items-center gap-2"><i class="fa-solid fa-circle-question text-kb-cyan"></i> Can you support the system after launch?</h3>
+          <p class="mt-2 text-sm text-kb-slate-300" style="color: var(--kb-slate-300);">Yes — we offer ongoing support and enhancement retainers for clients who want a continued partnership after go-live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer id="site-footer" class="bg-kb-navy-950 border-t" style="border-color: rgba(255,255,255,0.08);">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 py-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div>
+      <a href="index.html" class="flex items-center gap-3">
+        <span class="kb-logo-mark">K</span>
+        <span class="font-display font-semibold text-lg">Kbong <span class="text-kb-cyan">Pte. Ltd.</span></span>
+      </a>
+      <p class="mt-4 text-sm text-kb-slate-400 leading-relaxed" style="color: var(--kb-slate-400);">Order-on-demand software development, headquartered in Singapore.</p>
+      <div class="mt-5 flex gap-3 text-kb-slate-400" style="color: var(--kb-slate-400);">
+        <i class="fa-brands fa-linkedin text-lg"></i>
+        <i class="fa-brands fa-github text-lg"></i>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold text-sm tracking-wide uppercase text-white/90">Company</h4>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="work.html">Case Studies</a></li>
+        <li><a href="process.html">Our Process</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold text-sm tracking-wide uppercase text-white/90">Services</h4>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li><a href="services.html#custom-development">Custom Application Development</a></li>
+        <li><a href="services.html#business-systems">Business Management Systems</a></li>
+        <li><a href="services.html#automation">Workflow Automation</a></li>
+        <li><a href="services.html#cloud">Cloud & DevOps</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-display font-semibold text-sm tracking-wide uppercase text-white/90">Get in Touch</h4>
+      <ul class="mt-4 space-y-3 text-sm">
+        <li class="flex items-center gap-2"><i class="fa-solid fa-envelope text-kb-cyan"></i><a href="mailto:kmk@kbongsoft.com">kmk@kbongsoft.com</a></li>
+        <li class="flex items-center gap-2"><i class="fa-solid fa-location-dot text-kb-cyan"></i><span class="text-kb-slate-300" style="color: var(--kb-slate-300);">Singapore</span></li>
+      </ul>
+      <a href="contact.html" class="btn-primary mt-5 text-sm">Contact Us <i class="fa-solid fa-arrow-right text-xs"></i></a>
+    </div>
+  </div>
+  <div class="border-t py-6" style="border-color: rgba(255,255,255,0.08);">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-kb-slate-400" style="color: var(--kb-slate-400);">
+      <p>&copy; <span id="current-year"></span> Kbong Pte. Ltd. All rights reserved.</p>
+      <p>Company Registration: Singapore | UEN available upon request</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
